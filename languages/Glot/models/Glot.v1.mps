@@ -72,6 +72,22 @@
         <property role="QKDuA" value="Done the project is!" />
       </node>
     </node>
+    <node concept="3S8JVg" id="3gMH3tF$wll" role="3S8J4p">
+      <property role="TrG5h" value="about" />
+      <property role="g88V7" value="about.com" />
+      <property role="1hR726" value="4lY6b8kAxEe/HTTP" />
+      <node concept="3exjJP" id="3gMH3tF$wlt" role="3exln1">
+        <ref role="3ex$N3" node="73XcK_wQ1Ri" resolve="User" />
+        <ref role="3esQte" node="73XcK_wQ1Rm" resolve="username" />
+      </node>
+      <node concept="3exjJP" id="3gMH3tF$wlU" role="3exln1">
+        <ref role="3ex$N3" node="73XcK_wQ1Ri" resolve="User" />
+      </node>
+      <node concept="3exiw6" id="3gMH3tF$wl_" role="3exln1">
+        <property role="QK7hl" value="2S$vX$oT12D/h2" />
+        <property role="QKDuA" value="Welcome to the about page" />
+      </node>
+    </node>
     <node concept="3S9gGv" id="73XcK_wQ1Rg" role="3S9fxq">
       <property role="TrG5h" value="Register" />
       <property role="3S9gzZ" value="3iL_HZc_9Ss/POST" />
@@ -104,7 +120,7 @@
         <property role="TrG5h" value="password" />
       </node>
       <node concept="12zdQb" id="73XcK_wQ1R$" role="12zdQl">
-        <property role="TrG5h" value="picture" />
+        <property role="TrG5h" value="e" />
         <property role="12zdQa" value="3AgXDBUs3s1/image" />
       </node>
     </node>
