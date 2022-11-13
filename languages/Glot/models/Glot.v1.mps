@@ -57,7 +57,7 @@
     <property role="33YiV4" value="0" />
     <node concept="3S8JVg" id="4lY6b8kCCEt" role="3S8J4p">
       <property role="1hR726" value="4lY6b8kAxEe/HTTP" />
-      <property role="TrG5h" value="ciao" />
+      <property role="TrG5h" value="home" />
       <property role="g88V7" value="ciao.com" />
       <node concept="3exjJP" id="4lY6b8kDE90" role="3exln1">
         <ref role="3ex$N3" node="73XcK_wQ1Ri" resolve="User" />
@@ -74,7 +74,7 @@
     </node>
     <node concept="3S8JVg" id="3gMH3tF$wll" role="3S8J4p">
       <property role="TrG5h" value="about" />
-      <property role="g88V7" value="about.com" />
+      <property role="g88V7" value="ciao.com/about" />
       <property role="1hR726" value="4lY6b8kAxEe/HTTP" />
       <node concept="3exjJP" id="3gMH3tF$wlt" role="3exln1">
         <ref role="3ex$N3" node="73XcK_wQ1Ri" resolve="User" />
@@ -120,7 +120,7 @@
         <property role="TrG5h" value="password" />
       </node>
       <node concept="12zdQb" id="73XcK_wQ1R$" role="12zdQl">
-        <property role="TrG5h" value="e" />
+        <property role="TrG5h" value="picture" />
         <property role="12zdQa" value="3AgXDBUs3s1/image" />
       </node>
     </node>

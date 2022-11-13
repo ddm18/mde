@@ -330,7 +330,7 @@
               <node concept="2OqwBi" id="3gMH3tF$3yL" role="3K4Cdx">
                 <node concept="1Wqviy" id="3gMH3tF$2Dk" role="2Oq$k0" />
                 <node concept="liA8E" id="3gMH3tF$3Im" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                   <node concept="Xl_RD" id="3gMH3tF$3K4" role="37wK5m">
                     <property role="Xl_RC" value=".com" />
                   </node>
