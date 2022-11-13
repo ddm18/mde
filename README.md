@@ -1,2 +1,0 @@
-# mde
-mde project
