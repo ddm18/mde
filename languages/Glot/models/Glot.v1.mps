@@ -82,6 +82,11 @@
       </node>
       <node concept="3exjJP" id="3gMH3tF$wlU" role="3exln1">
         <ref role="3ex$N3" node="73XcK_wQ1Ri" resolve="User" />
+        <ref role="3esQte" node="73XcK_wQ1Rs" resolve="password" />
+      </node>
+      <node concept="3exjJP" id="2S$vX$oWaTt" role="3exln1">
+        <ref role="3ex$N3" node="73XcK_wQ1Ri" resolve="User" />
+        <ref role="3esQte" node="73XcK_wQ1R$" resolve="picture" />
       </node>
       <node concept="3exiw6" id="3gMH3tF$wl_" role="3exln1">
         <property role="QK7hl" value="2S$vX$oT12D/h2" />
