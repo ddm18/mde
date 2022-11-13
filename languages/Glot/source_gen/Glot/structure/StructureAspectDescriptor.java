@@ -26,12 +26,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptSystem = createDescriptorForSystem();
   /*package*/ final ConceptDescriptor myConceptcontent = createDescriptorForcontent();
   /*package*/ final ConceptDescriptor myConceptdynamic_content = createDescriptorFordynamic_content();
-  /*package*/ final ConceptDescriptor myConceptfetched = createDescriptorForfetched();
   /*package*/ final ConceptDescriptor myConceptstatic_content = createDescriptorForstatic_content();
-  /*package*/ final ConceptDescriptor myConceptstatic_contentReference = createDescriptorForstatic_contentReference();
   /*package*/ final EnumerationDescriptor myEnumerationDataType = new EnumerationDescriptor_DataType();
+  /*package*/ final EnumerationDescriptor myEnumerationHttpMethodType = new EnumerationDescriptor_HttpMethodType();
   /*package*/ final EnumerationDescriptor myEnumerationMethodType = new EnumerationDescriptor_MethodType();
-  /*package*/ final EnumerationDescriptor myEnumerationfetch = new EnumerationDescriptor_fetch();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -46,7 +44,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAttribute, myConceptElement, myConceptEntity, myConceptFeature, myConceptForm, myConceptPage, myConceptReference, myConceptSystem, myConceptcontent, myConceptdynamic_content, myConceptfetched, myConceptstatic_content, myConceptstatic_contentReference);
+    return Arrays.asList(myConceptAttribute, myConceptElement, myConceptEntity, myConceptFeature, myConceptForm, myConceptPage, myConceptReference, myConceptSystem, myConceptcontent, myConceptdynamic_content, myConceptstatic_content);
   }
 
   @Override
@@ -73,12 +71,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptcontent;
       case LanguageConceptSwitch.dynamic_content:
         return myConceptdynamic_content;
-      case LanguageConceptSwitch.fetched:
-        return myConceptfetched;
       case LanguageConceptSwitch.static_content:
         return myConceptstatic_content;
-      case LanguageConceptSwitch.static_contentReference:
-        return myConceptstatic_contentReference;
       default:
         return null;
     }
@@ -86,7 +80,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationDataType, myEnumerationMethodType, myEnumerationfetch);
+    return Arrays.asList(myEnumerationDataType, myEnumerationHttpMethodType, myEnumerationMethodType);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -150,6 +144,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/3796981848804124687");
     b.version(3);
     b.property("url", 0x70fd330960ddbdceL).type(PrimitiveTypeId.STRING).origin("8141719816728591822").done();
+    b.property("method", 0x457e18b214a26834L).type(MetaIdFactory.dataTypeId(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x457e18b2149a1a8dL)).origin("5007466988812003380").done();
     b.aggregate("content", 0x71f9e3fbbf7cb63aL).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x71f9e3fbbf7cc298L).optional(true).ordered(true).multiple(true).origin("8212846065875727930").done();
     return b.create();
   }
@@ -194,15 +189,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("attribute", 0x71f9e3fbbf8a84b5L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c30L).optional(true).origin("8212846065876632757").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForfetched() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Glot", "fetched", 0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x71f9e3fbbf8533c2L);
-    b.class_(false, false, false);
-    b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/8212846065876284354");
-    b.version(3);
-    b.property("label", 0x71f9e3fbbf870bb5L).type(PrimitiveTypeId.STRING).origin("8212846065876405173").done();
-    b.associate("attribute", 0x71f9e3fbbf853a6bL).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x1f05a1bb5d897c30L).optional(true).origin("8212846065876286059").done();
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForstatic_content() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Glot", "static_content", 0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x71f9e3fbbf7ccbfdL);
     b.class_(false, false, false);
@@ -210,14 +196,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x71f9e3fbbf7cc298L);
     b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/8212846065875733501");
     b.version(3);
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForstatic_contentReference() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Glot", "static_contentReference", 0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x71f9e3fbbf889ff3L);
-    b.class_(false, false, false);
-    b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/8212846065876508659");
-    b.version(3);
-    b.associate("static_content", 0x71f9e3fbbf889ff4L).target(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x71f9e3fbbf7ccbfdL).optional(false).origin("8212846065876508660").done();
     return b.create();
   }
 }

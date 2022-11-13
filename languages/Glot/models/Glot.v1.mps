@@ -26,7 +26,7 @@
         <reference id="8212846065875922744" name="Entity" index="3ex$N3" />
       </concept>
       <concept id="3796981848804124687" name="Glot.structure.Page" flags="ng" index="3S8JVg">
-        <property id="8141719816728591822" name="url" index="g88V7" />
+        <property id="5007466988812003380" name="method" index="1hR726" />
         <child id="8212846065875727930" name="content" index="3exln1" />
       </concept>
       <concept id="3796981848804203971" name="Glot.structure.Element" flags="ng" index="3S9gGs">
@@ -50,20 +50,11 @@
     <property role="TrG5h" value="v1" />
     <property role="12zSj7" value="1" />
     <property role="33YiV4" value="0" />
-    <node concept="3S8JVg" id="77TSZIZzjbC" role="3S8J4p">
-      <property role="TrG5h" value="ciao" />
-      <property role="g88V7" value="ciao.com" />
-      <node concept="3exjJP" id="77TSZIZzjec" role="3exln1">
+    <node concept="3S8JVg" id="4lY6b8kCCEt" role="3S8J4p">
+      <property role="1hR726" value="4lY6b8kAxEe/HTTP" />
+      <node concept="3exjJP" id="4lY6b8kDE90" role="3exln1">
         <ref role="3ex$N3" node="73XcK_wQ1Ri" resolve="User" />
-        <ref role="3esQte" node="73XcK_wQ1Rs" resolve="password" />
-      </node>
-      <node concept="3exjJP" id="77TSZIZ$MAa" role="3exln1">
-        <ref role="3ex$N3" node="73XcK_wQ1Ri" resolve="User" />
-        <ref role="3esQte" node="73XcK_wQ1Rs" resolve="password" />
-      </node>
-      <node concept="3exjJP" id="77TSZIZ_JQ2" role="3exln1">
-        <ref role="3ex$N3" node="73XcK_wQ1Ri" resolve="User" />
-        <ref role="3esQte" node="73XcK_wQ1R$" resolve="p" />
+        <ref role="3esQte" node="73XcK_wQ1R$" resolve="picture" />
       </node>
     </node>
     <node concept="3S9gGv" id="73XcK_wQ1Rg" role="3S9fxq">

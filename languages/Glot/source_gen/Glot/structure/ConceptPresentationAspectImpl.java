@@ -19,9 +19,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_System;
   private ConceptPresentation props_content;
   private ConceptPresentation props_dynamic_content;
-  private ConceptPresentation props_fetched;
   private ConceptPresentation props_static_content;
-  private ConceptPresentation props_static_contentReference;
 
   @Override
   @Nullable
@@ -97,13 +95,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_dynamic_content = cpb.create();
         }
         return props_dynamic_content;
-      case LanguageConceptSwitch.fetched:
-        if (props_fetched == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("fetched");
-          props_fetched = cpb.create();
-        }
-        return props_fetched;
       case LanguageConceptSwitch.static_content:
         if (props_static_content == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -111,13 +102,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_static_content = cpb.create();
         }
         return props_static_content;
-      case LanguageConceptSwitch.static_contentReference:
-        if (props_static_contentReference == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x71f9e3fbbf889ff3L, 0x71f9e3fbbf889ff4L, "static_content", "", "");
-          props_static_contentReference = cpb.create();
-        }
-        return props_static_contentReference;
     }
     return null;
   }

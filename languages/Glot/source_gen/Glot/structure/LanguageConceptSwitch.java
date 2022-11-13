@@ -19,9 +19,7 @@ public final class LanguageConceptSwitch {
   public static final int System = 7;
   public static final int content = 8;
   public static final int dynamic_content = 9;
-  public static final int fetched = 10;
-  public static final int static_content = 11;
-  public static final int static_contentReference = 12;
+  public static final int static_content = 10;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x28e4957b85994380L, 0x9a2de36d611c13b9L);
@@ -35,9 +33,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x1f05a1bb5d897c23L, System);
     builder.put(0x71f9e3fbbf7cc298L, content);
     builder.put(0x71f9e3fbbf7cd80eL, dynamic_content);
-    builder.put(0x71f9e3fbbf8533c2L, fetched);
     builder.put(0x71f9e3fbbf7ccbfdL, static_content);
-    builder.put(0x71f9e3fbbf889ff3L, static_contentReference);
     myIndex = builder.seal();
   }
 
