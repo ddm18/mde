@@ -30,6 +30,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final EnumerationDescriptor myEnumerationDataType = new EnumerationDescriptor_DataType();
   /*package*/ final EnumerationDescriptor myEnumerationHttpMethodType = new EnumerationDescriptor_HttpMethodType();
   /*package*/ final EnumerationDescriptor myEnumerationMethodType = new EnumerationDescriptor_MethodType();
+  /*package*/ final EnumerationDescriptor myEnumerationtagtype = new EnumerationDescriptor_tagtype();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -80,7 +81,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationDataType, myEnumerationHttpMethodType, myEnumerationMethodType);
+    return Arrays.asList(myEnumerationDataType, myEnumerationHttpMethodType, myEnumerationMethodType, myEnumerationtagtype);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -196,6 +197,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x71f9e3fbbf7cc298L);
     b.origin("r:2949c8b3-848f-4943-96d9-40c6f576f822(Glot.structure)/8212846065875733501");
     b.version(3);
+    b.property("tag", 0x2e247fd918e40b8cL).type(MetaIdFactory.dataTypeId(0x28e4957b85994380L, 0x9a2de36d611c13b9L, 0x2e247fd918e40f2aL)).origin("3324922995308497804").done();
+    b.property("content", 0x2e247fd918e6e87fL).type(PrimitiveTypeId.STRING).origin("3324922995308685439").done();
     return b.create();
   }
 }

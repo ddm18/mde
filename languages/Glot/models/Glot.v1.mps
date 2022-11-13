@@ -21,6 +21,10 @@
       <concept id="2235370616159566886" name="Glot.structure.Entity" flags="ng" index="12zdQt">
         <child id="2235370616159566894" name="features" index="12zdQl" />
       </concept>
+      <concept id="8212846065875733501" name="Glot.structure.static_content" flags="ng" index="3exiw6">
+        <property id="3324922995308497804" name="tag" index="QK7hl" />
+        <property id="3324922995308685439" name="content" index="QKDuA" />
+      </concept>
       <concept id="8212846065875736590" name="Glot.structure.dynamic_content" flags="ng" index="3exjJP">
         <reference id="8212846065876632757" name="attribute" index="3esQte" />
         <reference id="8212846065875922744" name="Entity" index="3ex$N3" />
@@ -55,6 +59,14 @@
       <node concept="3exjJP" id="4lY6b8kDE90" role="3exln1">
         <ref role="3ex$N3" node="73XcK_wQ1Ri" resolve="User" />
         <ref role="3esQte" node="73XcK_wQ1R$" resolve="picture" />
+      </node>
+      <node concept="3exiw6" id="2S$vX$oUsxi" role="3exln1">
+        <property role="QK7hl" value="2S$vX$oT0WF/p" />
+        <property role="QKDuA" value="Hello,my name is yoda" />
+      </node>
+      <node concept="3exiw6" id="2S$vX$oUHMF" role="3exln1">
+        <property role="QK7hl" value="2S$vX$oT19y/bold" />
+        <property role="QKDuA" value="Done the project is!" />
       </node>
     </node>
     <node concept="3S9gGv" id="73XcK_wQ1Rg" role="3S9fxq">
